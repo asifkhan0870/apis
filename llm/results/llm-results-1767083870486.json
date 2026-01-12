@@ -1,0 +1,15 @@
+{
+  "prompt": "Write a 2-line summary suitable for a manager: why checking listings on Google, Bing and Yelp matters.",
+  "checkedAt": "2025-12-30T08:37:50.480Z",
+  "results": [
+    {
+      "ok": false,
+      "provider": "https://api.cohere.ai/v1/generate",
+      "error": {
+        "id": "48c9a9f0-fa78-451b-8283-a90e31cc4900",
+        "message": "Generate API was removed on September 15 2025. Please migrate to Chat API. See https://docs.cohere.com/docs/migrating-from-cogenerate-to-cochat for details."
+      }
+    }
+  ],
+  "combinedSummary": ""
+}

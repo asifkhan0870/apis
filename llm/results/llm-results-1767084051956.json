@@ -1,0 +1,15 @@
+{
+  "prompt": "Write a 2-line summary suitable for a manager: why checking listings on Google, Bing and Yelp matters.",
+  "checkedAt": "2025-12-30T08:40:51.949Z",
+  "results": [
+    {
+      "ok": false,
+      "provider": "https://api.cohere.ai/v1/chat",
+      "error": {
+        "id": "0dbea214-fa5a-405c-9495-82d800bb4e1e",
+        "message": "invalid request: message must be at least 1 token long or tool results must be specified."
+      }
+    }
+  ],
+  "combinedSummary": ""
+}

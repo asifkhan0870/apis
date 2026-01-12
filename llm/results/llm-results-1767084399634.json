@@ -1,0 +1,15 @@
+{
+  "prompt": "Write a 2-line summary suitable for a manager",
+  "checkedAt": "2025-12-30T08:46:39.626Z",
+  "results": [
+    {
+      "ok": false,
+      "provider": "cohere-chat",
+      "error": {
+        "id": "6295318c-3366-4fd9-a73e-a545d591a6bf",
+        "message": "model 'command' was removed on September 15, 2025. See https://docs.cohere.com/docs/models#command for a list of models you can use instead."
+      }
+    }
+  ],
+  "combinedSummary": ""
+}
