@@ -1,0 +1,19 @@
+# Environment variables
+.env
+**/.env
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Mac
+.DS_Store
+# Ignore environment files
+.env
+**/.env
+
+# Node
+node_modules/
+
+# Mac
+.DS_Store
