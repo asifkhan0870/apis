@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Results Viewer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 20px;
+        background-color: #ecf1f6;
+      }
+      .platform-column {
+        max-height: 300vh;
+        overflow-y: auto;
+      }
+      .business-card {
+        margin-bottom: 20px;
+      }
+      .platform-header {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .business-entry {
+        border: 2px solid #010409;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+      }
+
+      .input-group {
+        outline: none;
+        height: 45px;
+      }
+
+      .btn {
+        padding: 12px 12px;
+        /* margin: 12px 34px; */
+      }
+      .head {
+        margin: 12px 22px;
+        padding: 12px 12px;
+      }
+
+      #results-row {
+        margin: 22px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="mb-4 text-center head">Business Search</h1>
+
+      <!-- Search Bar -->
+      <div class="input-group mb-6">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="e.g. beauty salon in New Delhi"
+        />
+        <button class="btn-primary btn" onclick="searchBusiness()">
+          Search
+        </button>
+      </div>
+
+      <!-- Results -->
+      <div id="results-row"></div>
+    </div>
+
+    <script>
+      const inputEl = document.getElementById("searchInput");
+
+      // Search on Enter (real search engine behavior)
+      inputEl.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") searchBusiness();
+      });
+
+      function parseSearchQuery(text) {
+        text = text.toLowerCase().replace(/\s+/g, " ").trim();
+
+        // handle "near"
+        text = text.replace(" near ", " in ");
+
+        // default fallback
+        let name = text;
+        let location = "";
+
+        if (text.includes(" in ")) {
+          const parts = text.split(" in ");
+          name = parts[0];
+          location = parts.slice(1).join(" ");
+        } else {
+          // assume last 2–3 words are location
+          const words = text.split(" ");
+          if (words.length > 3) {
+            name = words.slice(0, -3).join(" ");
+            location = words.slice(-3).join(" ");
+          }
+        }
+
+        return {
+          name: name.trim(),
+          location: location.trim(),
+        };
+      }
+
+      async function searchBusiness() {
+        const query = inputEl.value;
+        const resultsRow = document.getElementById("results-row");
+        resultsRow.innerHTML = "";
+
+        if (!query) {
+          resultsRow.innerHTML =
+            "<p class='text-danger'>Please enter a search query</p>";
+          return;
+        }
+
+        const { name, location } = parseSearchQuery(query);
+
+        if (!name || !location) {
+          resultsRow.innerHTML =
+            "<p class='text-danger'>Could not understand your search</p>";
+          return;
+        }
+
+        resultsRow.innerHTML = "<p class='text-info'>🔍 Searching...</p>";
+
+        try {
+          const res = await fetch("http://localhost:3000/check-business", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, location }),
+          });
+
+          const entry = await res.json();
+          renderResult(entry);
+        } catch (err) {
+          resultsRow.innerHTML =
+            "<p class='text-danger'>Error fetching results</p>";
+        }
+      }
+
+      function renderResult(entry) {
+        const resultsRow = document.getElementById("results-row");
+        resultsRow.innerHTML = "";
+
+        const card = document.createElement("div");
+        card.className = "card business-card shadow-sm w-100 mb-4";
+
+        card.innerHTML = `
+          <div class="card-body">
+            <h5 class="card-title">
+              Results for: <em>${entry.query.name}</em> in <em>${
+          entry.query.location
+        }</em>
+            </h5>
+            <p><strong>Checked At:</strong> ${entry.checkedAt}</p>
+            <div class="row">
+              ${["google", "bing", "yelp"]
+                .map(
+                  (platform) => `
+                <div class="col-md-4 platform-column">
+                  <h6 class="platform-header">
+                    ${platform.toUpperCase()} (${
+                    entry[platform].found ? "Found" : "Not Found"
+                  })
+                  </h6>
+                  ${
+                    entry[platform].businesses.length
+                      ? entry[platform].businesses
+                          .map(
+                            (b) => `
+                        <div class="business-entry">
+                          <strong>${b.name}</strong><br>
+                          ${b.address ? `<em>${b.address}</em><br>` : ""}
+                          ${b.phone ? `Phone: ${b.phone}<br>` : ""}
+                          ${b.rating ? `Rating: ${b.rating}<br>` : ""}
+                          ${
+                            b.categories
+                              ? `Categories: ${b.categories.join(", ")}`
+                              : ""
+                          }
+                        </div>
+                      `
+                          )
+                          .join("")
+                      : "<p class='text-muted'>No results</p>"
+                  }
+                </div>
+              `
+                )
+                .join("")}
+            </div>
+          </div>
+        `;
+
+        resultsRow.appendChild(card);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- McDonald's in Noida  sector 18 -->

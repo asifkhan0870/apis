@@ -1,0 +1,279 @@
+[
+  {
+    "checkedAt": "2025-12-29T06:34:18.135Z",
+    "query": {
+      "name": "mcdonald's",
+      "location": "Mumbai"
+    },
+    "google": {
+      "found": true,
+      "businesses": [
+        {
+          "name": "McDonald's",
+          "address": "Empire Building, No 134 to 136, Dr Dadabhai Naoroji Rd, Azad Maidan, Fort, Mumbai, Maharashtra 400001, India",
+          "rating": 4.2,
+          "place_id": "ChIJ8wGDN9nR5zsRSBWYcaF8fwE"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Metro House, Colaba Causeway, Apollo Bandar, Colaba, Mumbai, Maharashtra 400001, India",
+          "rating": 4.3,
+          "place_id": "ChIJW-2JFsHR5zsRZF6I3a1HtoU"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Hingu Bhavan Hingu Bhavan Andheri East Station, Sahar Rd, near Agarkar Chowk, Mumbai, Maharashtra 400069, India",
+          "rating": 4.2,
+          "place_id": "ChIJXQZOW9LJ5zsR8yn2GYIaqEo"
+        },
+        {
+          "name": "McDonald's Mumbai Airport T1 Departure",
+          "address": "Domestic Terminal 1B, Chhatrapati Shivaji Maharaj International Airport Mumbai, SHA, Mezzanine Level, near Vile Parle East, Navpada, Sahar Village, Vile Parle, Mumbai, Maharashtra 400099, India",
+          "rating": 4.9,
+          "place_id": "ChIJo9x6fKLJ5zsRjWGSvzBWaPk"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Shop No 532, Kadamba Kudpi House, Linking Rd, Khar, Khar West, Mumbai, Maharashtra 400052, India",
+          "rating": 4.2,
+          "place_id": "ChIJt0X9y7W35zsR7RZfORuFucs"
+        },
+        {
+          "name": "McDonald's",
+          "address": "CTS no.73A/3, Survey no. 47, Premises Co-Operative Society Limited, Atl Corporate Park, Shop no.1, Ground Floor, 1B, Saki Vihar Rd, Powai, Mumbai, Maharashtra 400072, India",
+          "rating": 4.8,
+          "place_id": "ChIJSxM3t5_J5zsRm0dnERwUwVA"
+        },
+        {
+          "name": "McDonald's Mumbai Airport T2",
+          "address": "CSIA, Level 4, International Departures Mumbai, Chatrapati Shivaji International Airport, Hardcastle Restaurants Pvt Ltd, McDonalds Family Restaurants, Mumbai-Airport T2-Intl Depart,Terminal 2, Mumbai, Maharashtra 400099, India",
+          "rating": 4.5,
+          "place_id": "ChIJWb05l07J5zsRoTzDcl6Y-Zw"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Shop No 101, 1st Floor Hill Road, Bandra West Next to St Stanislaus School, Mumbai, Maharashtra 400050, India",
+          "rating": 4.4,
+          "place_id": "ChIJAXKegT_J5zsR4hQUokULMaw"
+        },
+        {
+          "name": "McDonald's",
+          "address": "No 28 B, Sunrise Apartments Lokhandwala Complex, Sami, Swami Samarth Nagar, Mumbai, Maharashtra 400053, India",
+          "rating": 4.2,
+          "place_id": "ChIJC7Lbshe25zsRrvmAN9NFU1w"
+        },
+        {
+          "name": "McDonald's Mumbai Worli Atria Mall",
+          "address": "Atria-The Millennium Mall, Dr Annie Besant Rd, Lotus Colony, Worli, Mumbai, Maharashtra 400018, India",
+          "rating": 4.7,
+          "place_id": "ChIJgWJvhjLP5zsRHQpYhIxrWWI"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Western Express Highway Metro Station, Unpaid area concourse -1 near Andheri Kurla road, flyover, next to Andheri, Andheri East, Mumbai, Maharashtra 400093, India",
+          "rating": 4.9,
+          "place_id": "ChIJC3l_uY7J5zsRa-Eg4eLZu9A"
+        },
+        {
+          "name": "McDonald's Vile Parle East",
+          "address": "1st Floor, Plot 720 A, Hanuman Rd, near Gazali Hotel, Vishnu Prasad Society, Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra 400057, India",
+          "rating": 4.2,
+          "place_id": "ChIJyR-sMLXJ5zsRq4USQhMSeVQ"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Terminal 2, CSIA Level 3, Domestic Departure SHA Mumbai Chatrapati Shivaji International Airport, Sahar, Mumbai, Maharashtra 400099, India",
+          "rating": 4.8,
+          "place_id": "ChIJv7qEH9DJ5zsRg2kQmSD2Lvo"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Round Building, Bellagio Tower shop no.3,6,7,8,9,14 Ground, Saat Rasta, Mahalakshmi, Mumbai, Maharashtra 400011, India",
+          "rating": 4.5,
+          "place_id": "ChIJ33m4FdnP5zsRNcZW783O9zk"
+        },
+        {
+          "name": "McDonald's",
+          "address": "No 18, Unity Mansion, Gazdar Road, opposite Andheri Station, Railway Colony, Andheri West, Mumbai, Maharashtra 400058, India",
+          "rating": 4.3,
+          "place_id": "ChIJs_t309PJ5zsRIBel4OPSYVc"
+        },
+        {
+          "name": "McDonald's",
+          "address": "SN 09, Plot No 1A, Basant Court CHS Ltd Sion, opposite Sion Railway, Station, Mumbai, Maharashtra 400022, India",
+          "rating": 4.2,
+          "place_id": "ChIJDyl1KM7I5zsRKWZuBWTaE1g"
+        },
+        {
+          "name": "McDonald's",
+          "address": "No 273/275 Bellasis Road, Jehangir Boman Behram Rd, near City Centre, Marg, Mumbai, Maharashtra 400008, India",
+          "rating": 4.2,
+          "place_id": "ChIJeRiNAGvO5zsR2r8eR1V89sQ"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Trade World B, Ground Floor, Shop no. 4, 5, 10, 11, Kamala Mills Compound, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013, India",
+          "rating": 4.7,
+          "place_id": "ChIJAwa-DNbP5zsRfHxRv0EYxb8"
+        },
+        {
+          "name": "McDonald's Level 10 Terminal 2",
+          "address": "Level P10, Chhatrapati Shivaji Maharaj International Airport Mumbai, Terminal 2, Chatrapati Shivaji International Airport, Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra 400099, India",
+          "rating": 4.9,
+          "place_id": "ChIJjUe2HO_J5zsROBqNtKHuMHk"
+        },
+        {
+          "name": "McDonald's",
+          "address": "Sai Elegance, Mahakali Caves Rd, Subhash Nagar, Andheri East, Mumbai, Maharashtra 400093, India",
+          "rating": 4.2,
+          "place_id": "ChIJ71_f1zbI5zsRkrt7BiAh6JY"
+        }
+      ]
+    },
+    "yelp": {
+      "found": false,
+      "businesses": [],
+      "error": {
+        "error": {
+          "code": "LOCATION_NOT_FOUND",
+          "description": "Could not execute search, try specifying a more exact location."
+        }
+      }
+    },
+    "bing": {
+      "found": true,
+      "businesses": [
+        {
+          "name": "McDonald's Mumbai",
+          "address": "Hajarimal Somani Marg, Azad Maidan, Fort Area, Mumbai 400001, Maharashtra",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 18.939536,
+            "lon": 72.834135
+          }
+        },
+        {
+          "name": "McDonald's",
+          "address": "Kukatpally Road, A S Raju Nagar, Kukatpally, Hyderabad 500072, Telangana",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 17.493001,
+            "lon": 78.404401
+          }
+        },
+        {
+          "name": "McDonald's",
+          "address": "Panjagutta Road, Nagarjuna Hills, Punjagutta, Hyderabad 500082, Telangana",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 17.429665,
+            "lon": 78.450035
+          }
+        },
+        {
+          "name": "McDonald's",
+          "address": "Mehdipatnam Road, Jyothi Nagar, Humayun Nagar, Hyderabad 500028, Telangana",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 17.396556,
+            "lon": 78.442944
+          }
+        },
+        {
+          "name": "McDonald's",
+          "address": "N C Kelkar Marg, Kelkar Wadi, Dadar West, Mumbai 400028, Maharashtra",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 19.023002,
+            "lon": 72.842115
+          }
+        },
+        {
+          "name": "McDonald's",
+          "address": "Belasis Road, RBI Staff Colony, Nagpada, Mumbai 400008, Maharashtra",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 18.968039,
+            "lon": 72.824323
+          }
+        },
+        {
+          "name": "McDonald's Family Restaurant",
+          "address": "Shahid Bhagat Singh Road, Bora Bazar Hutatma Chowk, Hutatma Chowk Flora Fountain, Mumbai 400001, Maharashtra",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 18.936214,
+            "lon": 72.837375
+          }
+        },
+        {
+          "name": "McDonald's",
+          "address": "Dada Saheb Rege Road, Shivaji Park Dadar West, Mumbai 400028, Maharashtra",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 19.025785,
+            "lon": 72.839424
+          }
+        },
+        {
+          "name": "McDonald's",
+          "address": "T-2C, Lal Bahadur Shastri Marg, Amrut Nagar, Ghatkopar West, Mumbai 400086, Maharashtra",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 19.099365,
+            "lon": 72.916911
+          }
+        },
+        {
+          "name": "McDonald's",
+          "address": "Lal Bahadur Shastri Marg, Kadam Pada, Mulund West, Mumbai 400080, Maharashtra",
+          "phone": null,
+          "categories": [
+            "fast food",
+            "restaurant"
+          ],
+          "position": {
+            "lat": 19.179301,
+            "lon": 72.945585
+          }
+        }
+      ]
+    }
+  }
+]
